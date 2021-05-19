@@ -190,4 +190,4 @@ MonoBehaviour:
   animator: {fileID: 2012453382}
   timer: -1
   timerIsRunning: 0
-  animatorChild: {fileID: 0}
+  difficulty: {fileID: 0}

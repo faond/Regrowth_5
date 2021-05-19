@@ -10,12 +10,11 @@ GameObject:
   m_Component:
   - component: {fileID: 3492631814029664978}
   - component: {fileID: 3492631814029664979}
-  - component: {fileID: 3492631814029664976}
   - component: {fileID: 3492631814029664977}
-  - component: {fileID: 7875973270263869757}
+  - component: {fileID: 9184557825938473030}
   m_Layer: 0
   m_Name: LadderBottom
-  m_TagString: Wilt
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -85,19 +84,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &3492631814029664976
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3492631814029664982}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 904a167226d57486989a6ae2cfb4a984, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  animator: {fileID: 7875973270263869757}
 --- !u!61 &3492631814029664977
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -124,7 +110,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!95 &7875973270263869757
+--- !u!95 &9184557825938473030
 Animator:
   serializedVersion: 3
   m_ObjectHideFlags: 0

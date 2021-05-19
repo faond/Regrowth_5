@@ -7,19 +7,9 @@ public class Transformation : MonoBehaviour
   public Animator animator;
   public float timer = -1 ;
   public bool timerIsRunning = false;
-  private bool isAParent ;
-  public Animator animatorChild;
+  //public Slider difficulty;
 
-  void Start(){
-      if(transform.childCount > 0){
-         animatorChild = transform.GetChild(0).gameObject.GetComponent<Animator> ();
-         isAParent = true;
-     }
-     else{
-       isAParent=false;
-     }
-  }
-
+  public Slider difficulty;
 
 
   public void Update(){
@@ -32,7 +22,11 @@ public class Transformation : MonoBehaviour
           else
           {
             animator.SetTrigger("Wilt");
-            if(isAParent) animatorChild.SetTrigger("Wilt");
+            if(transform.childCount > 0){
+              for(int i=0 ; i<transform.childCount; i++){
+               transform.GetChild(i).gameObject.GetComponent<Animator> ().SetTrigger("Wilt");
+              }
+             }
             gameObject.tag = "Wilt";
             timer = -1;
             timerIsRunning = false;
@@ -48,7 +42,13 @@ public class Transformation : MonoBehaviour
       if(collision.transform.CompareTag("Player") && gameObject.tag == "Wilt")
       {
         animator.SetTrigger("Bloom");
-        if(isAParent) animatorChild.SetTrigger("Bloom");
+        if(transform.childCount > 0){
+          for(int i=0 ; i<transform.childCount; i++){
+           transform.GetChild(i).gameObject.GetComponent<Animator> ().SetTrigger("Bloom");
+           //Debug.LogWarning(difficulty.value);
+           // ICI CA COINCE
+          }
+        }
         gameObject.tag = "Bloom";
         timer = 5;
         timerIsRunning = true;

@@ -12,10 +12,9 @@ GameObject:
   - component: {fileID: 8984773867970119044}
   - component: {fileID: 5420803282620559114}
   - component: {fileID: 359268071559800194}
-  - component: {fileID: 7016849850212836950}
   m_Layer: 0
   m_Name: LaddersTop
-  m_TagString: Wilt
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -130,16 +129,3 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &7016849850212836950
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7376633628505201579}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 904a167226d57486989a6ae2cfb4a984, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  animator: {fileID: 359268071559800194}
