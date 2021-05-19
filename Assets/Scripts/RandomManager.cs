@@ -1,17 +1,20 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class RandomManager : MonoBehaviour
 {
     public static RandomManager instance { get; private set; }
-
+    public Slider difficulty;
     public bool lifeMustPop = false;
+
+
 
     private void Awake()
     {
         if(instance != null){
-          Debug.LogWarning("Il y a plus d'un PlayerMovement");
+          Debug.LogWarning("Il y a plus d'un RandomManager");
           return ;
         }
         instance = this;
@@ -31,6 +34,7 @@ public class RandomManager : MonoBehaviour
     }
 
     public int Bernoulli(float p){
+        //float u = difficulty.value;
         float u = Random.Range(0,1);
         if (u <= p) return 1; // P( X = 1 ) = p
         return 0; // P( X = 0 ) = 1 - p

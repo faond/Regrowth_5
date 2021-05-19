@@ -68,6 +68,7 @@ public class SettingsMenu : MonoBehaviour
     {
         difficultySlider.value = difficulty;
     }
+    
 
     public void SetFullScreen(bool isFullScreen)
     {
